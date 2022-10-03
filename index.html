@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choix V25</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <img class="logo" src="images/logo.png" alt="logo" />
+        </div>
+        <div class="navbar-search">
+          <div class="search-box">
+            <input
+              type="text"
+              placeholder="Rechercher un plat, pays, ingrédient..."
+            />
+            <label class="btn-search"><i class="fas fa-search"></i></label>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <a class="item-link" href="#">Accueil</a>
+
+          <div class="item-drop">
+            <a class="item-link" href="#">Nos plats</a>
+            <div class="drop-menu">
+              <div class="drop-block">
+                <img class="drop-img" src="images/menu.png" alt="menu-img" />
+                <h3 class="drop-item">Menu</h3>
+              </div>
+              <div class="drop-block">
+                <img
+                  class="drop-img"
+                  src="images/suggestion.jpeg"
+                  alt="suggestion-img"
+                />
+                <h3 class="drop-item">Suggestions</h3>
+              </div>
+              <div class="drop-block">
+                <img class="drop-img" src="images/roue.jpg" alt="wheel-img" />
+                <h3 class="drop-item">Au hasard ?</h3>
+              </div>
+              <div class="drop-block">
+                <img
+                  class="drop-img"
+                  src="images/recette.jpg"
+                  alt="recipe-img"
+                />
+                <h3 class="drop-item">Nos recettes</h3>
+              </div>
+            </div>
+          </div>
+          <div class="item-drop">
+            <a class="item-link" href="#">Nos engagements</a>
+            <div class="drop-menu">
+              <div class="drop-block">
+                <img
+                  class="drop-img"
+                  src="images/environnement.png"
+                  alt="environment-img"
+                />
+                <h3 class="drop-item">Environnement</h3>
+              </div>
+              <div class="drop-block">
+                <img
+                  class="drop-img"
+                  src="images/local.png"
+                  alt="local-products-img"
+                />
+                <h3 class="drop-item">Produits locaux</h3>
+              </div>
+              <div class="drop-block">
+                <img
+                  class="drop-img"
+                  src="images/agriculture.gif"
+                  alt="agriculture-img"
+                />
+                <h3 class="drop-item">Productions responsables</h3>
+              </div>
+              <div class="drop-block">
+                <img
+                  class="drop-img"
+                  src="images/antigaspi.png"
+                  alt="anti-waste-img"
+                />
+                <h3 class="drop-item">Anti gaspillage</h3>
+              </div>
+            </div>
+          </div>
+          <a class="item-link" href="#">Vos avis</a>
+          <a class="item-link" href="#">Contact</a>
+        </div>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="navbar-btn">
+          <a class="btn-reservation" href="#">Réservation</a>
+          <a class="btn-reservation-responsive"
+            ><i class="fa-solid fa-calendar-day"></i
+          ></a>
+        </div>
+        <div class="navbar-btn">
+          <a class="btn-takeaway" href="#">À Emporter</a>
+          <a class="btn-takeaway-responsive"
+            ><i class="fa-solid fa-basket-shopping"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="wheel-page">
+      <div class="settings-container">
+        <form class="settings-choice">
+          <h3 class="settings-propositions">Nombre de possibilités :</h3>
+
+          <div class="drop-wrapper">
+            <div class="btn" data-target="#dropright">
+              <span class="selected">10</span>
+              <div class="caret"></div>
+            </div>
+
+            <div class="dropright" id="dropright">
+              <a class="dropright-n" href="#">2</a>
+              <a class="dropright-n" href="#">4</a>
+              <a class="dropright-n" href="#">6</a>
+              <a class="dropright-n" href="#">8</a>
+              <a class="dropright-n" id="active" href="#">10</a>
+            </div>
+          </div>
+        </form>
+
+        <div class="settings-slats-container">
+          <form class="settings-slats-form">
+            <div class="slat-input">
+              <div class="slat-icon">
+                <img class="slat-img" />
+                <div class="slat-text"></div>
+              </div>
+              <input class="slat-label" type="text" />
+            </div>
+
+            <div class="slat-input">
+              <div class="slat-icon">
+                <img class="slat-img" />
+              </div>
+              <input class="slat-label" type="text" />
+            </div>
+
+            <div class="slat-input">
+              <div class="slat-icon">
+                <img class="slat-img" />
+              </div>
+              <input class="slat-label" type="text" />
+            </div>
+            <div class="slat-input">
+              <div class="slat-icon">
+                <img class="slat-img" />
+              </div>
+              <input class="slat-label" type="text" />
+            </div>
+            <div class="slat-input">
+              <div class="slat-icon">
+                <img class="slat-img" />
+              </div>
+              <input class="slat-label" type="text" />
+            </div>
+            <div class="slat-input">
+              <div class="slat-icon">
+                <img class="slat-img" />
+              </div>
+              <input class="slat-label" type="text" />
+            </div>
+            <div class="slat-input">
+              <div class="slat-icon">
+                <img class="slat-img" />
+              </div>
+              <input class="slat-label" type="text" />
+            </div>
+            <div class="slat-input">
+              <div class="slat-icon">
+                <img class="slat-img" />
+              </div>
+              <input class="slat-label" type="text" />
+            </div>
+            <div class="slat-input">
+              <div class="slat-icon">
+                <img class="slat-img" />
+              </div>
+              <input class="slat-label" type="text" />
+            </div>
+            <div class="slat-input">
+              <div class="slat-icon">
+                <img class="slat-img" />
+              </div>
+              <input class="slat-label" type="text" />
+            </div>
+          </form>
+        </div>
+
+        <div class="start-wheel">
+          <h3>Lancer la roue</h3>
+        </div>
+
+        <div class="power-gauge">
+          <div class="power-click">
+            <button class="click">Faiblement</button>
+            <button class="click">Normalement</button>
+            <button class="click">Très fort</button>
+          </div>
+          <div class="container">
+            <div class="circular-progress">
+              <div class="value-container">0%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-container">
+          <h3>
+            Pour plus de puissance, vous pouvez maintenir appuyé sur votre barre
+            d'espace :
+          </h3>
+          <div class="settings-space">
+            <button class="btn-space">
+              <span>Restez appuyé sur la barre d'espace de votre clavier</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-container">
+        <div class="paddle-container">
+          <div class="paddle">
+            <div class="fixation"></div>
+            <div class="paddle-detector"></div>
+          </div>
+        </div>
+
+        <div class="wheel-container">
+          <div class="card-box">
+            <div class="cards">
+              <div class="slat-div">
+                <div class="slate-collider"></div>
+                <div class="slate-angle-left"></div>
+              </div>
+              <div class="slat-div">
+                <div class="slate-collider"></div>
+                <div class="slate-angle-left"></div>
+              </div>
+              <div class="slat-div">
+                <div class="slate-collider"></div>
+                <div class="slate-angle-left"></div>
+              </div>
+              <div class="slat-div">
+                <div class="slate-collider"></div>
+                <div class="slate-angle-left"></div>
+              </div>
+              <div class="slat-div">
+                <div class="slate-collider"></div>
+                <div class="slate-angle-left"></div>
+              </div>
+              <div class="slat-div">
+                <div class="slate-collider"></div>
+                <div class="slate-angle-left"></div>
+              </div>
+              <div class="slat-div">
+                <div class="slate-collider"></div>
+                <div class="slate-angle-left"></div>
+              </div>
+              <div class="slat-div">
+                <div class="slate-collider"></div>
+                <div class="slate-angle-left"></div>
+              </div>
+              <div class="slat-div">
+                <div class="slate-collider"></div>
+                <div class="slate-angle-left"></div>
+              </div>
+              <div class="slat-div">
+                <div class="slate-collider"></div>
+                <div class="slate-angle-left"></div>
+              </div>
+            </div>
+          </div>
+          <button id="spin-btn"></button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="copyRight">
+        <h2>© 2022 Le Normand Voyageur. Tous droits réservés.</h2>
+        <h2>
+          Pour votre santé, pratiquez une activité physique régulière –
+          www.mangerbouger.fr
+        </h2>
+      </section>
+    </footer>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

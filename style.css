@@ -1,0 +1,1061 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px*/
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 90px;
+  background: rgb(0, 0, 0);
+}
+
+.space-container {
+  display: grid;
+  place-items: center;
+  grid-gap: 20px;
+  padding: 10px;
+  font-size: 1.6rem;
+}
+
+.settings-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.btn-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 50px;
+  display: flex;
+  background: linear-gradient(#cecece, #ffffff 100%, #acacac);
+  box-shadow: 0px 0px 5px 5px #acacac;
+  border: 0;
+  color: black;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.btn-space:focus {
+  outline: none;
+}
+
+.btn-space:disabled {
+  box-shadow: none;
+  opacity: 0.5;
+  color: grey;
+}
+
+.btn-space:active {
+  box-shadow: none;
+}
+
+.wheel-container {
+  width: 98%;
+  height: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.card-box {
+  /* box-shadow: inset 0px 0px 0px 4px dodgerblue; */
+  width: 575px;
+  height: 575px;
+  margin-bottom: 1px;
+}
+
+.card-box:after {
+  content: "";
+  display: block;
+}
+
+.cards {
+  position: relative;
+  height: 570px;
+  width: 570px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  background-color: #ccc;
+  border-radius: 50%;
+  border: 15px solid white;
+  position: relative;
+  overflow: hidden;
+}
+
+.slate-collider {
+  position: absolute;
+  z-index: 4;
+  height: 2px;
+  width: 160px;
+  bottom: 248px;
+  left: 10px;
+}
+
+.slate-angle-left {
+  position: absolute;
+  z-index: 4;
+  height: 14px;
+  width: 1px;
+  top: 8px;
+  left: 35px;
+  transform: rotate(342deg);
+}
+
+.slat-div {
+  position: absolute;
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+  box-sizing: border-box;
+  height: 277px;
+  width: 180px;
+  transform-origin: center 277px;
+  bottom: 270px;
+  background-size: contain;
+}
+
+.slat-div:nth-child(10) {
+  transform: rotate(360deg);
+  background-image: url(images/poulet-coco-10.jpg);
+  background-color: white;
+}
+
+.slat-div:nth-child(9) {
+  transform: rotate(324deg);
+  background-image: url(images/bandeja-10.jpg);
+  background-color: rgb(141, 80, 0);
+}
+
+.slat-div:nth-child(8) {
+  transform: rotate(288deg);
+  background-image: url(images/moules-frites-10.jpg);
+  background-color: black;
+}
+
+.slat-div:nth-child(7) {
+  transform: rotate(252deg);
+  background-image: url(images/salade-grecque-10.jpg);
+  background-color: green;
+}
+
+.slat-div:nth-child(6) {
+  transform: rotate(216deg);
+  background-image: url(images/fish-and-chips-10.jpg);
+  background-color: yellow;
+}
+
+.slat-div:nth-child(5) {
+  transform: rotate(180deg);
+  background-color: rgb(250, 130, 100);
+  background-image: url(images/paprika-10.jpg);
+}
+
+.slat-div:nth-child(4) {
+  transform: rotate(144deg);
+  background-color: rgb(100, 162, 250);
+}
+
+.slat-div:nth-child(3) {
+  transform: rotate(108deg);
+  background-image: url(images/paella-10.jpg);
+}
+
+.slat-div:nth-child(2) {
+  transform: rotate(72deg);
+  background-color: rgb(255, 188, 30);
+  background-image: url(images/tartelette-10.jpg);
+}
+
+.slat-div:nth-child(1) {
+  transform: rotate(36deg);
+  background-color: pink;
+  background-image: url(images/grillad-lax-10.jpg);
+}
+
+#spin-btn {
+  position: absolute;
+  box-shadow: 0px 0px 0px 10px white;
+  z-index: 10;
+  background-color: rgb(198, 198, 198);
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  transition: 5s;
+}
+
+.space-container {
+  display: grid;
+  place-items: center;
+  grid-gap: 20px;
+  padding: 10px;
+}
+
+.settings-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.btn-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 50px;
+  display: flex;
+  background: linear-gradient(#cecece, #ffffff 100%, #acacac);
+  box-shadow: 0px 0px 5px 5px #acacac;
+  border: 0;
+  color: black;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.btn-space:focus {
+  outline: none;
+}
+
+.btn-space:disabled {
+  box-shadow: none;
+  opacity: 0.5;
+  color: grey;
+}
+
+.btn-space:active {
+  box-shadow: none;
+}
+
+.wheel-page {
+  display: flex;
+  background-image: url(./images/fond.jpg);
+}
+
+.settings-container {
+  /* box-shadow: inset 0px 0px 0px 4px rgb(255, 191, 0); */
+  order: 1;
+  display: flex;
+  width: 50%;
+  height: 655px;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.game-container {
+  /* box-shadow: inset 0px 0px 0px 4px rgb(0, 174, 255); */
+  order: 2;
+  width: 50%;
+  height: 655px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.paddle-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 2%;
+  padding-right: 2%;
+}
+
+.paddle {
+  box-shadow: inset 0px 0px 0px 2px rgb(155, 0, 0);
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 36% 58% 2% 80% / 36% 80% 2% 58%;
+  transform: rotate(45deg);
+  background: rgb(255, 0, 0);
+  margin-top: 10px;
+
+  animation-name: tick;
+  animation-iteration-count: 1;
+  animation-duration: 700ms;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes tick {
+  0% {
+    transform: rotate(36deg);
+  }
+}
+
+.paddle-detector {
+  position: relative;
+  z-index: 6;
+  width: 1px;
+  height: 78px;
+  left: 38px;
+  transform: rotate(-45deg);
+}
+
+.fixation {
+  position: absolute;
+  z-index: 0;
+  width: 8px;
+  height: 8px;
+  background: rgb(140, 140, 140);
+  border-radius: 50%;
+  margin: 15px;
+}
+
+.wheel-spin {
+  background-color: #dddddd;
+  width: 560px;
+  height: 560px;
+  border-radius: 50%;
+}
+
+.wheel-shadow {
+  box-shadow: 4px 8px 0px rgba(0, 0, 0, 0.2);
+  width: 560px;
+  height: 560px;
+  border-radius: 50%;
+}
+
+.settings-slats {
+  height: 25%;
+}
+
+.settings-slats-form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 20px 2px 20px;
+}
+
+.slat-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 40px;
+  margin: 0px 10px 0px 5px;
+  color: white;
+}
+
+.slat-img {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  background-size: contain;
+}
+
+.slat-text {
+  background-color: #34911c;
+  display: none;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.slat-input {
+  display: flex;
+  width: 100%;
+}
+
+.slat-label {
+  width: 100%;
+  font-size: 1.6rem;
+  padding-left: 5px;
+}
+
+.settings-choice {
+  display: flex;
+  height: 5%;
+  margin: 10px 0px 5px 0px;
+}
+
+.settings-propositions {
+  padding: 5px 10px 10px 20px;
+  white-space: nowrap;
+  font-size: 1.8rem;
+}
+
+.drop-wrapper {
+  display: flex;
+  width: 305px;
+  height: 100%;
+  text-align: center;
+}
+
+.btn {
+  box-shadow: inset 0px 0px 0px 1px rgb(111, 111, 111);
+  background: white;
+  color: black;
+  min-width: 70px;
+  height: 100%;
+  cursor: pointer;
+  min-height: 30px;
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.selected {
+  width: 50%;
+  margin-left: 10px;
+  font-size: 1.8rem;
+}
+
+.caret {
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid black;
+  transition: 0.3s;
+  transform: rotate(-90deg);
+  margin: 0px 5px 0px 5px;
+}
+
+.caret-rotate {
+  transform: rotate(90deg);
+}
+
+.dropright {
+  background: #2a2f3b;
+  height: 100%;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
+}
+
+.dropright-open {
+  display: flex;
+  opacity: 1;
+}
+
+.dropright a {
+  flex: 1;
+  color: white;
+  text-decoration: none;
+  padding: 5px 0px 5px 0px;
+  font-size: 1.4rem;
+}
+
+.dropright a:hover {
+  font-size: 1.8rem;
+  background: #34911c;
+}
+
+.start-wheel {
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px 40px 0px;
+  font-size: 2.4rem;
+}
+
+.power-gauge {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px 20px 0px;
+}
+
+.container {
+  position: relative;
+  width: 60%;
+  height: calc(250px / 2);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.circular-progress {
+  box-shadow: inset 0px 0px 0px 40px rgb(205, 205, 205);
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transform: rotate(270deg);
+}
+
+.circular-progress:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  height: 70%;
+  width: 70%;
+  background-color: #e6e6e6;
+  border-radius: 50%;
+}
+
+.value-container {
+  transform: rotate(90deg);
+  position: relative;
+  z-index: 2;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 4rem;
+  padding-bottom: 50px;
+  color: #231c3d;
+}
+
+.start-title {
+  height: 5%;
+  display: wrap;
+}
+
+.start-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 0px 10px 0px;
+}
+
+.start-choice {
+  display: flex;
+}
+
+.start-click {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.start-space {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.power-click {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.click {
+  width: 150px;
+  padding: 10px 20px;
+  white-space: nowrap;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.click:hover {
+  font-size: 1.9rem;
+  box-shadow: 0px 0px 2px 1px black;
+  z-index: 1;
+}
+
+.name-space {
+  width: 100%;
+}
+
+.reset-btn {
+  position: absolute;
+  z-index: 11;
+  width: 170px;
+  padding: 10px;
+  white-space: nowrap;
+  font-size: 1.8rem;
+  cursor: pointer;
+  bottom: 30px;
+  right: 20px;
+}
+
+.reset-btn i {
+  padding-left: 14px;
+}
+
+/* BARRE DE NAVIGATION */
+
+/* First Part : Responsive NAVBAR with a computer display */
+
+/* Part of the NAVBAR relating to the LOGO */
+
+.navbar-logo {
+  order: 1;
+  flex-basis: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  object-fit: contain;
+  margin: 0px 10px 0px 10px;
+}
+
+/* Part of the NAVBAR relating to the SEARCH BAR */
+
+.navbar-search {
+  order: 2;
+  flex-basis: 35%;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.search-box {
+  position: relative;
+  height: 50px;
+  margin: 20px 10px 0px 0px;
+}
+
+.search-box input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  background: #fff;
+  outline: none;
+  border: none;
+  padding-left: 20px;
+  font-size: 1.8rem;
+}
+
+.btn-search {
+  position: absolute;
+  right: -2px;
+  top: 0;
+  width: 50px;
+  background: #34911c;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+}
+
+/* Part of the NAVBAR relating to the ITEMS */
+
+.navbar-item {
+  order: 3;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.item-link {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.item-link:hover {
+  box-shadow: inset 0px -5px 0px #3aa21f;
+}
+
+.item-drop {
+  display: flex;
+  align-items: stretch;
+  flex-grow: 0.2;
+}
+
+.drop-menu {
+  position: absolute;
+  width: 100%;
+  left: -100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 3px black;
+}
+
+.item-drop:hover > .drop-menu {
+  flex: 1;
+  left: 0px;
+  top: calc(100% + 0.05rem);
+}
+
+.drop-img {
+  height: 100px;
+  width: auto;
+  padding-top: 10px;
+}
+
+.drop-item {
+  padding: 10px 0px 10px 0px;
+}
+
+/* Part of the NAVBAR relating to the BUTTONS */
+
+.navbar-btn {
+  order: 4;
+  flex-basis: 5%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn-reservation,
+.btn-takeaway {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  background-color: #34911c;
+  color: white;
+  padding: 10px 25px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.btn-reservation:hover,
+.btn-takeaway:hover,
+.btn-search:hover {
+  background-color: #246413;
+}
+
+.btn-reservation-responsive,
+.btn-takeaway-responsive {
+  display: none;
+}
+
+/* Part of the NAVBAR relating to the HAMBURGER MENU */
+
+.hamburger {
+  order: 5;
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Second Part : Responsive NAVBAR with a tablet display */
+
+@media (max-width: 1050px) {
+  .navbar-logo {
+    flex-basis: 35%;
+  }
+
+  .navbar-search {
+    display: none;
+  }
+
+  .navbar-btn {
+    flex-basis: 25%;
+  }
+
+  .hamburger {
+    flex-basis: 25%;
+    display: block;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .drop-menu {
+    display: none;
+  }
+
+  .navbar-item {
+    position: fixed;
+    z-index: -1;
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    transform: translateY(-100%);
+  }
+
+  .navbar-item.active {
+    transform: translateY(28%);
+    transition: 0.3s;
+  }
+
+  .item-link {
+    padding: 20px 0px 20px 0px;
+    color: black;
+  }
+
+  .item-link:hover {
+    color: #34911c;
+    font-size: 2rem;
+    box-shadow: none;
+  }
+
+  .btn-reservation,
+  .btn-takeaway {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    background-color: #34911c;
+    color: white;
+    padding: 10px 25px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.8rem;
+  }
+
+  .btn-reservation:hover,
+  .btn-takeaway:hover,
+  .btn-search:hover {
+    background-color: #246413;
+  }
+
+  .btn-reservation-responsive,
+  .btn-takeaway-responsive {
+    display: none;
+  }
+
+  .btn-reservation-responsive,
+  .btn-takeaway-responsive {
+    display: none;
+  }
+}
+
+/* Third Part : Responsive NAVBAR with a mobile display */
+
+@media (max-width: 600px) {
+  .navbar-logo {
+    flex-basis: 35%;
+  }
+
+  .navbar-search {
+    display: none;
+  }
+
+  .navbar-btn {
+    flex-basis: 25%;
+  }
+
+  .hamburger {
+    flex-basis: 25%;
+    display: block;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .drop-menu {
+    display: none;
+  }
+
+  .navbar-item {
+    position: fixed;
+    z-index: -1;
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    transform: translateY(-100%);
+  }
+
+  .navbar-item.active {
+    transform: translateY(28%);
+    transition: 0.3s;
+  }
+
+  .item-link {
+    padding: 20px 0px 20px 0px;
+    color: black;
+  }
+
+  .btn-reservation,
+  .btn-takeaway {
+    display: none;
+  }
+
+  .btn-reservation-responsive,
+  .btn-takeaway-responsive {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-reservation-responsive i,
+  .btn-takeaway-responsive i {
+    color: white;
+    background-color: #34911c;
+    box-sizing: border-box;
+    height: 60px;
+    width: 60px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 1.8rem;
+    margin: 0px 5px 0px 5px;
+  }
+
+  .btn-reservation-responsive i:hover,
+  .btn-takeaway-responsive i:hover {
+    background-color: #246413;
+    cursor: pointer;
+  }
+}
+
+/* Part of the SECTION relating to the BACKGROUND */
+
+.banniere {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/banner.jpg);
+  background-size: cover;
+}
+
+/* Part of the FOOTER */
+
+footer {
+  background-color: rgb(0, 0, 0);
+  color: black;
+  margin-top: auto;
+  padding: 10px 0px 10px 0px;
+  font-size: 1.8rem;
+}
+
+.copyRight h2 {
+  display: block;
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+}
+
+/* RESPONSIVE ROUE */
+
+@media (max-width: 1200px) {
+  .settings-container {
+    width: 40%;
+  }
+
+  .game-container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .settings-container {
+    width: 35%;
+  }
+
+  .game-container {
+    width: 65%;
+  }
+
+  .power-gauge {
+    display: grid;
+    justify-items: center;
+    gap: 15px;
+  }
+
+  .space-container {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 935px) {
+  .settings-container {
+    width: 30%;
+  }
+
+  .game-container {
+    width: 70%;
+  }
+
+  .btn {
+    min-width: 50px;
+  }
+
+  .caret {
+    margin: 0px 5px 0px 2px;
+  }
+}
+
+@media (max-width: 850px) {
+  .settings-container {
+    display: none;
+  }
+
+  .game-container {
+    width: 100%;
+  }
+}
