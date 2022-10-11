@@ -6,4 +6,5 @@ Au travers de ce projet, j'ai voulu approndir mes connaîssances en CSS et Javas
 
 <br/>
 
-![interface-roue-de-la-fourtune](https://user-images.githubusercontent.com/59047879/193641764-4aead643-a487-467c-9769-7d1388f7b517.png)
+
+![Roue-de-la-fortune](https://user-images.githubusercontent.com/59047879/195162053-3c9b12ff-ce29-4da0-ba54-88b096513811.png)
