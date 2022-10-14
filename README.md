@@ -6,5 +6,5 @@ Au travers de ce projet, j'ai voulu approndir mes connaîssances en CSS et Javas
 
 <br/>
 
+![Roue-de-la-fortune](https://user-images.githubusercontent.com/59047879/195808921-c86d2983-eb48-42b9-a708-ac90e29b5e23.png)
 
-![Roue-de-la-fortune](https://user-images.githubusercontent.com/59047879/195162053-3c9b12ff-ce29-4da0-ba54-88b096513811.png)
