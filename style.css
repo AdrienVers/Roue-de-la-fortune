@@ -179,6 +179,7 @@ header {
 .slat-div:nth-child(4) {
   transform: rotate(144deg);
   background-color: rgb(100, 162, 250);
+  background-image: url(images/hamburger-10.jpg);
 }
 
 .slat-div:nth-child(3) {

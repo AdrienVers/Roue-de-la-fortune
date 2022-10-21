@@ -71,7 +71,7 @@ const img10 = [
   "url(images/grillad-lax-10.jpg)",
   "url(images/tartelette-10.jpg)",
   "url(images/paella-10.jpg)",
-  "url(images/hamburger.png)",
+  "url(images/hamburger-10.jpg)",
   "url(images/paprika-10.jpg)",
   "url(images/fish-and-chips-10.jpg)",
   "url(images/salade-grecque-10.jpg)",
@@ -101,7 +101,7 @@ const imgIcon = [
   "url(images/fish-and-chips-i.jpg)",
   "url(images/poulet-paprika-i.jpg)",
   "url(images/paella-i.jpg)",
-  "url(images/hamburger.png)",
+  "url(images/hamburger-i.jpg)",
   "url(images/tartelette-i.jpg)",
   "url(images/grillad-lax-i.jpg)",
 ];
